@@ -1,0 +1,57 @@
+[
+    {
+      "model": "panamapi.airport",
+      "pk": 1,
+      "fields": {
+        "name": "Los Angeles International Airport",
+        "city": "Los Angeles",
+        "state":"California",
+        "country":"USA",
+        "airport_code": "LAX"
+      }
+    },
+    {
+      "model": "panamapi.airport",
+      "pk": 2,
+      "fields": {
+        "name": "John F. Kennedy International Airport",
+        "city": "New York City",
+        "state":"New York",
+        "country": "USA",
+        "airport_code": "JFK"
+      }
+    },
+    {
+      "model": "panamapi.airport",
+      "pk": 3,
+      "fields": {
+        "name": "Nashville International Airport",
+        "city": "Nashville",
+        "state": "Tennessee",
+        "country":"USA",
+        "airport_code": "BNA"
+      }
+    },
+    {
+      "model": "panamapi.airport",
+      "pk": 4,
+      "fields": {
+        "name": "Los Cabos International Airport",
+        "city": "San Jose del Cabo",
+        "state": "Baja California Sur",
+        "country": "Mexico",
+        "airport_code": "SJD"
+      }
+    },
+    {
+      "model": "panamapi.airport",
+      "pk": 5,
+      "fields": {
+        "name": "Phoenix Sky Harbor International Airport ",
+        "city": "Phoenix",
+        "state": "Arizona",
+        "country": "USA",
+        "airport_code": "PHX"
+      }
+    }
+  ]

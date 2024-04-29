@@ -1,0 +1,38 @@
+[
+    {
+        "model": "panamapi.customer",
+        "pk": 1,
+        "fields": {
+            "user": 1,
+            "phone_number": "6155021212",
+            "date_of_birth": "1992-04-22"
+        }
+    },
+    {
+        "model": "panamapi.customer",
+        "pk": 2,
+        "fields": {
+            "user": 2,
+            "phone_number": "5556159876",
+            "date_of_birth": "1995-02-12"
+        }
+    },
+    {
+        "model": "panamapi.customer",
+        "pk": 3,
+        "fields": {
+            "user": 3,
+            "phone_number": "9992348765",
+            "date_of_birth": "2000-05-24"
+        }
+    },
+    {
+        "model": "panamapi.customer",
+        "pk": 4,
+        "fields": {
+            "user": 4,
+            "phone_number": "4187654567",
+            "date_of_birth": "1990-12-30"
+        }
+    }
+]

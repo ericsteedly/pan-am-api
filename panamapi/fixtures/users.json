@@ -1,0 +1,74 @@
+[
+    {
+        "model": "auth.user",
+        "pk": 1,
+        "fields": {
+            "password": "pbkdf2_sha256$150000$fHDURJBIASpx$trZS1MWc6YiNe5EYNBap+P+zMAwpNgNbUZH/b9bgvdw=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "john",
+            "first_name": "John",
+            "last_name": "Smith",
+            "email": "johnsmith@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2019-10-10T19:12:13.676Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 2,
+        "fields": {
+            "password": "pbkdf2_sha256$150000$fHDURJBIASpx$trZS1MWc6YiNe5EYNBap+P+zMAwpNgNbUZH/b9bgvdw=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "jim",
+            "first_name": "Jim",
+            "last_name": "Bob",
+            "email": "jimbob@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2019-10-10T22:47:43.564Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 3,
+        "fields": {
+            "password": "pbkdf2_sha256$150000$fHDURJBIASpx$trZS1MWc6YiNe5EYNBap+P+zMAwpNgNbUZH/b9bgvdw=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "jill",
+            "first_name": "Jill",
+            "last_name": "Smith",
+            "email": "jillsmith@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2019-10-10T22:48:19.899Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 4,
+        "fields": {
+            "password": "pbkdf2_sha256$150000$fHDURJBIASpx$trZS1MWc6YiNe5EYNBap+P+zMAwpNgNbUZH/b9bgvdw=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "eric",
+            "first_name": "Eric",
+            "last_name": "James",
+            "email": "ericjames@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2019-10-10T22:48:53.984Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    }
+]
