@@ -69,7 +69,7 @@ class Flights(ViewSet):
 
         return one_stop_flights
 
-
+    
 class FlightSerializer(serializers.ModelSerializer):
     departureAirport = AirportSerializer(many=False)
     arrivalAirport = AirportSerializer(many=False)
