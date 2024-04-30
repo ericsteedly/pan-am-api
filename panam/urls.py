@@ -8,6 +8,8 @@ from panamapi.views import *
 
 router = routers.DefaultRouter(trailing_slash=False)
 
+router.register(r"flights", Flights, "flights")
+
 urlpatterns = [
     path("", include(router.urls)),
     path("register", register_user),
