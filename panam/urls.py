@@ -9,6 +9,7 @@ from panamapi.views import *
 router = routers.DefaultRouter(trailing_slash=False)
 
 router.register(r"flights", Flights, "flights")
+router.register(r"airports", Airports, "airports")
 
 urlpatterns = [
     path("", include(router.urls)),
