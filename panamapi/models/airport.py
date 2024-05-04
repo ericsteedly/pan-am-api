@@ -7,3 +7,4 @@ class Airport(models.Model):
     state = models.CharField(max_length=255)
     country = models.CharField(max_length=255)
     airport_code = models.CharField(max_length=3)
+    timezone = models.CharField(max_length=64, default='UTC')

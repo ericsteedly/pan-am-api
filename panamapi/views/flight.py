@@ -8,9 +8,9 @@ from datetime import date, datetime, timedelta
 
 class Flights(ViewSet):
     def list(self, request):
-        departureAirport_id = request.data.get('departureAirport')
-        arrivalAirport_id = request.data.get('arrivalAirport')
-        departure_day = request.data.get('departureDay')
+        departureAirport_id = self.request.query_params.get('departureAirport', None)
+        arrivalAirport_id = self.request.query_params.get('arrivalAirport', None)
+        departure_day = self.request.query_params.get('departureDay', None)
 
         try:
             departure_airport = Airport.objects.get(pk=departureAirport_id)
