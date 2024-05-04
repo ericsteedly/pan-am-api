@@ -4,6 +4,7 @@ from rest_framework.response import Response
 from panamapi.models import Flight, Airport
 from .airport import AirportSerializer
 from datetime import date, datetime, timedelta
+import json
 
 
 class Flights(ViewSet):
@@ -28,10 +29,18 @@ class Flights(ViewSet):
         )
 
         one_stop_flights = self.get_one_stop_flights(departure_airport, arrival_airport, departure_day)
+        all_flights = list(FlightSerializer(direct_flights, many=True).data) + one_stop_flights
 
-        all_flights = list(FlightSerializer(direct_flights, many=True).data) + list(one_stop_flights)
+        def get_departure_time(flight):
+            if 'flight1' in flight:
+                return flight['flight1']['departureTime']
+            else:
+                return flight['departureTime']
 
-        return Response(all_flights, status=status.HTTP_200_OK)
+        all_flights.sort(key=get_departure_time)
+        ordered_flights = all_flights
+
+        return Response(ordered_flights, status=status.HTTP_200_OK)
 
     def get_one_stop_flights(self, departure_airport, arrival_airport, departure_day):
         one_stop_flights = []
@@ -58,9 +67,14 @@ class Flights(ViewSet):
                 )
 
                 for flight2 in second_leg:
-                    serialized_flight1 = FlightSerializer(flight1, many=False).data
-                    serialized_flight2 = FlightSerializer(flight2, many=False).data
-                    one_stop_flight = [serialized_flight1, serialized_flight2]
+                    departure_datetime = datetime.combine(flight2.departureDay, flight2.departureTime)
+                    layover = departure_datetime - arrival_datetime
+                    total_duration = str(flight1.duration + flight2.duration + layover)
+                    one_stop_flight = OneStopSerializer({
+                        'flight1': flight1,
+                        'flight2': flight2,
+                        'total_duration': total_duration
+                    }).data
                     one_stop_flights.append(one_stop_flight)
 
         return one_stop_flights
@@ -69,6 +83,7 @@ class Flights(ViewSet):
 class FlightSerializer(serializers.ModelSerializer):
     departureAirport = AirportSerializer(many=False)
     arrivalAirport = AirportSerializer(many=False)
+    duration = serializers.SerializerMethodField()
 
     class Meta:
         model = Flight
@@ -82,5 +97,22 @@ class FlightSerializer(serializers.ModelSerializer):
             'points',
             'seats',
             'departureAirport',
-            'arrivalAirport'
+            'arrivalAirport',
+            'duration'
         ]
+
+    def get_duration(self, obj):
+        duration = str(obj.duration)
+        return duration
+    
+class DurationField(serializers.Field):
+    def to_representation(self, value):
+        seconds = value
+        formatted_duration = str(seconds)
+        return formatted_duration
+    
+class OneStopSerializer(serializers.Serializer):
+    flight1 = FlightSerializer(many=False)
+    flight2 = FlightSerializer(many=False)
+    total_duration = DurationField()
+    
