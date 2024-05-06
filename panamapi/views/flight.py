@@ -70,10 +70,14 @@ class Flights(ViewSet):
                     departure_datetime = datetime.combine(flight2.departureDay, flight2.departureTime)
                     layover = departure_datetime - arrival_datetime
                     total_duration = str(flight1.duration + flight2.duration + layover)
+                    total_price = flight1.price + flight2.price
+                    total_points = flight1.points + flight2.points
                     one_stop_flight = OneStopSerializer({
                         'flight1': flight1,
                         'flight2': flight2,
-                        'total_duration': total_duration
+                        'total_duration': total_duration,
+                        'total_price': total_price,
+                        'total_points': total_points
                     }).data
                     one_stop_flights.append(one_stop_flight)
 
@@ -84,6 +88,7 @@ class FlightSerializer(serializers.ModelSerializer):
     departureAirport = AirportSerializer(many=False)
     arrivalAirport = AirportSerializer(many=False)
     duration = serializers.SerializerMethodField()
+    price = serializers.DecimalField(max_digits=10, decimal_places=2)
 
     class Meta:
         model = Flight
@@ -105,14 +110,27 @@ class FlightSerializer(serializers.ModelSerializer):
         duration = str(obj.duration)
         return duration
     
+    def to_representation(self, instance):
+        data = super().to_representation(instance)
+        data['price'] = float(data['price'])  
+        return data
+
+    
 class DurationField(serializers.Field):
     def to_representation(self, value):
         seconds = value
         formatted_duration = str(seconds)
         return formatted_duration
-    
+
 class OneStopSerializer(serializers.Serializer):
     flight1 = FlightSerializer(many=False)
     flight2 = FlightSerializer(many=False)
     total_duration = DurationField()
+    total_price = serializers.DecimalField(max_digits=10, decimal_places=2)
+    total_points = serializers.IntegerField()
+
+    def to_representation(self, instance):
+        data = super().to_representation(instance)
+        data['total_price'] = float(data['total_price'])  
+        return data
     
