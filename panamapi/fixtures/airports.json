@@ -7,7 +7,8 @@
         "city": "Los Angeles",
         "state":"California",
         "country":"USA",
-        "airport_code": "LAX"
+        "airport_code": "LAX",
+        "timezone": "America/Los_Angeles"
       }
     },
     {
@@ -18,7 +19,8 @@
         "city": "New York City",
         "state":"New York",
         "country": "USA",
-        "airport_code": "JFK"
+        "airport_code": "JFK",
+        "timezone": "America/New_York"
       }
     },
     {
@@ -29,7 +31,8 @@
         "city": "Nashville",
         "state": "Tennessee",
         "country":"USA",
-        "airport_code": "BNA"
+        "airport_code": "BNA",
+        "timezone": "America/Chicago"
       }
     },
     {
@@ -40,7 +43,8 @@
         "city": "San Jose del Cabo",
         "state": "Baja California Sur",
         "country": "Mexico",
-        "airport_code": "SJD"
+        "airport_code": "SJD",
+        "timezone": "America/Los_Angeles"
       }
     },
     {
@@ -51,7 +55,8 @@
         "city": "Phoenix",
         "state": "Arizona",
         "country": "USA",
-        "airport_code": "PHX"
+        "airport_code": "PHX",
+        "timezone": "America/Denver"
       }
     }
   ]
