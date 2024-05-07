@@ -11,6 +11,7 @@ router = routers.DefaultRouter(trailing_slash=False)
 router.register(r"account", Account, "account")
 router.register(r"flights", Flights, "flights")
 router.register(r"airports", Airports, "airports")
+router.register(r"bookings", Bookings, "bookings")
 
 urlpatterns = [
     path("", include(router.urls)),

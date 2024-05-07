@@ -4,7 +4,14 @@ from .payment import Payment
 
 
 class Booking(models.Model):
-    id = models.IntegerField(primary_key=True)
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='bookings')
     payment = models.ForeignKey(Payment, on_delete=models.DO_NOTHING, null=True, related_name='bookings')  # null if not complete
-    rewards_payment = models.BooleanField()
+    rewards_payment = models.BooleanField(null=True) #null if not complete/paid with dollars
+
+
+    @property
+    def total_price(self):
+        total = 0
+        for ticket in self.tickets.all():
+            total += ticket.flight.price
+        return total
