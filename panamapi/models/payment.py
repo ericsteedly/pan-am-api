@@ -10,3 +10,14 @@ class Payment(models.Model):
     number = models.CharField(max_length=25)
     expDate = models.DateField()
     CVV = models.IntegerField(validators=[MaxLengthValidator(4)])
+
+
+    @property
+    def obscured_num(self):
+        # Replaces all but the last 3 digits with asterisks
+        if self.account_number is not None:
+            obscured_digits = "*" * (len(self.account_number) - 3)
+            visible_digits = self.account_number[-3:]
+            return obscured_digits + visible_digits
+        else:
+            return None
