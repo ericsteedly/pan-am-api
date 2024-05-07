@@ -1,0 +1,67 @@
+[
+    {
+      "model": "panamapi.Payment",
+      "pk": 1,
+      "fields": {
+        "user": 1,
+        "merchant": "VISA",
+        "first_name": "John",
+        "last_name": "Doe",
+        "card_number": "4111111111111111",
+        "expiration_date": "2025-12-31",
+        "CVV": 123
+      }
+    },
+    {
+      "model": "panamapi.Payment",
+      "pk": 2,
+      "fields": {
+        "user": 2,
+        "merchant": "VISA",
+        "first_name": "Jane",
+        "last_name": "Smith",
+        "card_number": "5555555555554444",
+        "expiration_date": "2026-06-30",
+        "CVV": 456
+      }
+    },
+    {
+      "model": "panamapi.Payment",
+      "pk": 3,
+      "fields": {
+        "user": 4,
+        "merchant": "VISA",
+        "first_name": "Eric",
+        "last_name": "Steedly",
+        "card_number": "3782822463100005",
+        "expiration_date": "2024-03-31",
+        "CVV": 789
+      }
+    },
+    {
+      "model": "panamapi.Payment",
+      "pk": 4,
+      "fields": {
+        "user": 4,
+        "merchant": "AMEX",
+        "first_name": "Eric",
+        "last_name": "Steedly",
+        "card_number": "6011111111111117",
+        "expiration_date": "2027-09-30",
+        "CVV": 101
+      }
+    },
+    {
+      "model": "panamapi.Payment",
+      "pk": 5,
+      "fields": {
+        "user": 4,
+        "merchant": "MASTERCARD",
+        "first_name": "Eric",
+        "last_name": "Steedly",
+        "card_number": "3566002020360505",
+        "expiration_date": "2025-02-28",
+        "CVV": 112
+      }
+    }
+]

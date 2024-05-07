@@ -3,4 +3,5 @@ from .flight import Flights
 from .airport import Airports
 from .booking import Bookings
 from .ticket import Ticket
-from.account import Account
+from .account import Account
+from .payment import Payments
