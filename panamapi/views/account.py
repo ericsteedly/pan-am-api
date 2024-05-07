@@ -47,6 +47,14 @@ class Account(ViewSet):
     permission_classes = (IsAuthenticated,)
 
     def list(self, request):
+        """get users account info
+
+        Args:
+            request (GET): gets both user and customer instances for a user 
+
+        Returns:
+            serialized user info as object with nested "customer" field
+        """
 
         try:
             customer = Customer.objects.get(user=request.auth.user)
@@ -58,3 +66,23 @@ class Account(ViewSet):
         
         except Exception as ex:
             return HttpResponseServerError(ex)
+        
+
+    def update(self, request, pk=None):
+        """edit Users account info
+
+        Args:
+            request (PUT): include changes in request data
+        """
+
+        customer = Customer.objects.get(user=request.auth.user)
+        current_user = User.objects.get(pk=pk)
+        customer.date_of_birth = request.data['date_of_birth']
+        customer.phone_number = request.data['phone_number']
+        current_user.first_name = request.data['first_name']
+        current_user.last_name = request.data['last_name']
+        current_user.email = request.data['email']
+        current_user.save()
+        customer.save()
+
+        return Response("account updated", status=status.HTTP_204_NO_CONTENT)
