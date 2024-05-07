@@ -139,4 +139,14 @@ class Bookings(ViewSet):
 
             return Response(serialized_roundtrip.data, status=status.HTTP_200_OK)
         
+    @action(methods=["get"], detail=True)
+    def retrieveRoundtrip(self, request, pk=None):
+        
+        if request.method == "GET":
+            roundtrip = RoundTrip.objects.get(pk=pk)
+
+            serialized_roundtrip = RoundTripSerializer(roundtrip, many=False, context={"request":request})
+
+            return Response(serialized_roundtrip.data, status=status.HTTP_200_OK)
+        
     
