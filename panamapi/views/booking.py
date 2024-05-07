@@ -6,14 +6,16 @@ from rest_framework import status, serializers
 from django.contrib.auth.models import User
 from panamapi.models import Customer, Booking, Ticket, Flight, RoundTrip
 from rest_framework.decorators import action
+from .flight import FlightSerializer
 
 class TicketSerializer(serializers.ModelSerializer):
+    flight = FlightSerializer(many=False)
     class Meta:
         model = Ticket
         fields = [
             "id",
             "booking_id",
-            "flight_id",
+            "flight",
             "user_id"
         ]
 
@@ -27,7 +29,8 @@ class BookingSerializer(serializers.ModelSerializer):
             "user_id",
             "payment_id",
             "rewards_payment",
-            "tickets"
+            "tickets",
+            "total_price"
         ]
 
 class RoundTripSerializer(serializers.ModelSerializer):
