@@ -9,3 +9,4 @@ python manage.py loaddata tokens
 python manage.py loaddata customers
 python manage.py loaddata airports
 python manage.py loaddata flights
+python manage.py loaddata payments

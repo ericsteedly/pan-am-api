@@ -12,6 +12,7 @@ router.register(r"account", Account, "account")
 router.register(r"flights", Flights, "flights")
 router.register(r"airports", Airports, "airports")
 router.register(r"bookings", Bookings, "bookings")
+router.register(r"payments", Payments, "payments")
 
 urlpatterns = [
     path("", include(router.urls)),
