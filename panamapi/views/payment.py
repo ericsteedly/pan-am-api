@@ -44,7 +44,7 @@ class Payments(ViewSet):
     def retrieve(self, request, pk=None):
         user = request.user
         payment_type = Payment.objects.get(pk=pk)
-        if payment_type.user is user:
+        if payment_type.user_id is user.id:
             try:
                 payment_type = Payment.objects.get(pk=pk)
                 serialized_payment = PaymentSerializer(
@@ -58,7 +58,7 @@ class Payments(ViewSet):
     def destroy(self, request, pk=None):
         user = request.user
         payment = Payment.objects.get(pk=pk)
-        if payment.user is user:
+        if payment.user_id is user.id:
             try:
                 payment.delete()
 
