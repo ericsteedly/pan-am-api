@@ -18,7 +18,8 @@ class PaymentSerializer(serializers.ModelSerializer):
             'expiration_date',
             'first_name',
             'last_name',
-            'expiration_date' 
+            'expiration_date',
+            'obscured_num' 
             ]
 
 

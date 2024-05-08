@@ -19,10 +19,10 @@ class PaymentSerializer(serializers.ModelSerializer):
         model = Payment
         fields = [
             'id',
-            'firstName',
-            'lastName',
+            'first_name',
+            'last_name',
             'merchant',
-            'expDate',
+            'expiration_date',
             'obscured_num'
         ]
 

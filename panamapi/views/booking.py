@@ -4,7 +4,7 @@ from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import status, serializers
 from django.contrib.auth.models import User
-from panamapi.models import Customer, Booking, Ticket, Flight, RoundTrip
+from panamapi.models import Customer, Booking, Ticket, Flight, RoundTrip, Payment
 from rest_framework.decorators import action
 from .flight import FlightSerializer
 
@@ -109,13 +109,9 @@ class Bookings(ViewSet):
     def list(self, request):
         """
             List all completed bookings
-  
         """
-        current_user = Customer.objects.get(user=request.auth.user)
         try:
-            completed_bookings = Booking.objects.get(customer=current_user, payment_id__isnull=False)
-
-            # booking_tickets = Ticket.objects.filter(booking=completed_booking)
+            completed_bookings = Booking.objects.filter(user=request.auth.user, payment_id__isnull=False)
 
             serialized_booking = BookingSerializer(
                 completed_bookings, many=True, context={"request": request}
@@ -126,6 +122,22 @@ class Bookings(ViewSet):
 
         return Response(serialized_booking.data, status=status.HTTP_200_OK)
     
+
+
+    def update(self, request, pk=None):
+        """add payment to booking to complete
+
+        Args:
+            request (PUT): query Booking_id, payment in body
+        """
+        user = request.user
+        booking = Booking.objects.get(pk=pk, user=request.auth.user)
+        booking.payment = Payment.objects.get(pk=request.data['payment_id'])
+        booking.save()
+
+        return Response("Booking Completed", status=status.HTTP_202_ACCEPTED)
+
+
     @action(methods=["post"], detail=False)
     def roundtrip(self, request):
 
