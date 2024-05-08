@@ -1,6 +1,8 @@
 from django.db import models
-from django.core.validators import MaxLengthValidator
+from django.core.validators import MaxLengthValidator, RegexValidator
 from django.contrib.auth.models import User
+
+exp_date_pattern = r'^(0[1-9]|1[0-2])/\d{2}$'
 
 class Payment(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='payments')
@@ -8,7 +10,7 @@ class Payment(models.Model):
     first_name = models.CharField(max_length=255)
     last_name = models.CharField(max_length=255)
     card_number = models.CharField(max_length=25)
-    expiration_date = models.DateField()
+    expiration_date = models.CharField(max_length=5, validators=[RegexValidator(exp_date_pattern, 'Invalid expiration date format. Use MM/YY.')])
     CVV = models.IntegerField(validators=[MaxLengthValidator(4)])
 
 
