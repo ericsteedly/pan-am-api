@@ -1,4 +1,5 @@
 from .register import login_user, register_user
+from .csrf import get_csrf_token
 from .flight import Flights
 from .airport import Airports
 from .booking import Bookings

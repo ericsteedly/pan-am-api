@@ -63,7 +63,7 @@ class Payments(ViewSet):
             try:
                 payment.delete()
 
-                return Response({}, status=status.HTTP_204_NO_CONTENT)
+                return Response("", status=status.HTTP_200_OK)
 
             except Payment.DoesNotExist as ex:
                 return Response({'payment type deleted': ex.args[0]}, status=status.HTTP_404_NOT_FOUND)
