@@ -42,6 +42,7 @@ class AccountSerializer(serializers.ModelSerializer):
             'customer'
         ]
 
+
 class Account(ViewSet):
 
     permission_classes = (IsAuthenticated,)

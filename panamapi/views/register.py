@@ -1,4 +1,3 @@
-"""Register user"""
 import json
 from django.http import HttpResponse, HttpResponseNotAllowed
 from django.contrib.auth import authenticate
@@ -7,6 +6,7 @@ from django.views.decorators.csrf import csrf_exempt
 from rest_framework import status
 from rest_framework.authtoken.models import Token
 from panamapi.models import Customer
+from rest_framework.response import Response
 
 
 
