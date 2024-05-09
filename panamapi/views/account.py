@@ -86,4 +86,4 @@ class Account(ViewSet):
         current_user.save()
         customer.save()
 
-        return Response("account updated", status=status.HTTP_204_NO_CONTENT)
+        return Response("account updated", status=status.HTTP_200_OK)
