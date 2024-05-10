@@ -58,5 +58,17 @@
         "airport_code": "PHX",
         "timezone": "America/Denver"
       }
+    },
+    {
+      "model": "panamapi.airport",
+      "pk": 6,
+      "fields": {
+        "name": "Denver International Airport",
+        "city": "Denver",
+        "state": "Colorado",
+        "country": "USA",
+        "airport_code": "DEN",
+        "timezone": "America/Denver"
+      }
     }
   ]
