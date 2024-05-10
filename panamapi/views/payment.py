@@ -63,13 +63,10 @@ class Payments(ViewSet):
             try:
                 payment.delete()
 
-                return Response("", status=status.HTTP_200_OK)
+                return Response("Payment Type Deleted", status=status.HTTP_200_OK)
 
             except Payment.DoesNotExist as ex:
-                return Response({'payment type deleted': ex.args[0]}, status=status.HTTP_404_NOT_FOUND)
-
-            except Exception as ex:
-                return Response({'payment type does not exist': ex.args[0]}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+                return Response({'Payment type not found': ex.args[0]}, status=status.HTTP_404_NOT_FOUND)
         else:
             return Response("Not authorized to delete this payment", status=status.HTTP_403_FORBIDDEN)
 

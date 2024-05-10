@@ -91,15 +91,14 @@ class Bookings(ViewSet):
             current_user = User.objects.get(pk=request.auth.user.id)
             booking = Booking.objects.get(pk=pk, user=current_user)
             serialized_booking = BookingSerializer(booking, context={"request": request})
-            return Response(serialized_booking.data)
+
+            return Response(serialized_booking.data, status=status.HTTP_200_OK)
 
         except Booking.DoesNotExist as ex:
             return Response(
                 {
                 "message": "The requested booking does not exist, or you do not have permission to access it."
-                },
-                status=status.HTTP_404_NOT_FOUND,
-            )
+                },status=status.HTTP_404_NOT_FOUND,)
 
         except Exception as ex:
             return HttpResponseServerError(ex)
@@ -123,6 +122,7 @@ class Bookings(ViewSet):
     
 
 
+
     def update(self, request, pk=None):
         """add payment to booking to complete
 
@@ -137,7 +137,8 @@ class Bookings(ViewSet):
         return Response("Booking Completed", status=status.HTTP_202_ACCEPTED)
 
 
-    @action(methods=["post"], detail=False)
+
+    @action(methods=["post", "delete"], detail=False)
     def roundtrip(self, request):
 
         if request.method == "POST":
@@ -150,6 +151,21 @@ class Bookings(ViewSet):
 
             return Response(serialized_roundtrip.data, status=status.HTTP_200_OK)
         
+        if request.method == "DELETE":
+            current_user = User.objects.get(pk=request.auth.user.id)
+            try:
+                depart_booking = Booking.objects.get(pk=request.data['depart_booking_id'], user=current_user)
+                depart_booking.delete()
+                return_booking = Booking.objects.get(pk=request.data['return_booking_id'], user=current_user)
+                return_booking.delete()
+            except Booking.DoesNotExist as ex:
+                return Response({"booking(s) not found": ex.args[0]}, status=status.HTTP_404_NOT_FOUND)
+
+            return Response("Roundtrip bookings deleted", status=status.HTTP_204_NO_CONTENT)
+
+
+        
+
     @action(methods=["get"], detail=True)
     def retrieveRoundtrip(self, request, pk=None):
         
