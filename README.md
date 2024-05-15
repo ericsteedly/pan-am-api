@@ -46,7 +46,7 @@ git@github.com:ericsteedly/pan-am-api.git
 #### Client
 Now you can clone the client application:
 
-9. Node.js is required, install first if neccessary
+9. Node.js is required, install first if necessary
 10. Clone the following SSH and cd into the root directory:
 ```bash
 git@github.com:ericsteedly/pan-am.git
