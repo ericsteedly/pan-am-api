@@ -1,0 +1,1035 @@
+    {
+        "model": "panamapi.flight",
+        "pk": ,
+        "fields": {
+          "departureAirport": 1,
+          "departureDay": "2024-05-18",
+          "departureTime": "08:00:00",
+          "arrivalAirport": 2,
+          "arrivalDay": "2024-05-18",
+          "arrivalTime": "11:30:00",
+          "price": 250.00,
+          "points": 1200,
+          "seats": 180
+        }
+      },
+      {
+        "model": "panamapi.flight",
+        "pk": ,
+        "fields": {
+          "departureAirport": 1,
+          "departureDay": "2024-05-18",
+          "departureTime": "11:00:00",
+          "arrivalAirport": 3,
+          "arrivalDay": "2024-05-18",
+          "arrivalTime": "14:30:00",
+          "price": 175.00,
+          "points": 900,
+          "seats": 120
+        }
+      },
+      {
+        "model": "panamapi.flight",
+        "pk": ,
+        "fields": {
+          "departureAirport": 1,
+          "departureDay": "2024-05-18",
+          "departureTime": "14:00:00",
+          "arrivalAirport": 4,
+          "arrivalDay": "2024-05-18",
+          "arrivalTime": "16:30:00",
+          "price": 300.00,
+          "points": 1500,
+          "seats": 200
+        }
+      },
+      {
+        "model": "panamapi.flight",
+        "pk": ,
+        "fields": {
+          "departureAirport": 2,
+          "departureDay": "2024-05-18",
+          "departureTime": "09:00:00",
+          "arrivalAirport": 5,
+          "arrivalDay": "2024-05-18",
+          "arrivalTime": "11:30:00",
+          "price": 225.00,
+          "points": 1100,
+          "seats": 150
+        }
+      },
+      {
+        "model": "panamapi.flight",
+        "pk": ,
+        "fields": {
+          "departureAirport": 2,
+          "departureDay": "2024-05-18",
+          "departureTime": "12:00:00",
+          "arrivalAirport": 6,
+          "arrivalDay": "2024-05-18",
+          "arrivalTime": "14:00:00",
+          "price": 175.00,
+          "points": 850,
+          "seats": 120
+        }
+      },
+      {
+        "model": "panamapi.flight",
+        "pk": ,
+        "fields": {
+          "departureAirport": 3,
+          "departureDay": "2024-05-18",
+          "departureTime": "08:00:00",
+          "arrivalAirport": 1,
+          "arrivalDay": "2024-05-18",
+          "arrivalTime": "09:30:00",
+          "price": 150.00,
+          "points": 700,
+          "seats": 100
+        }
+      },
+      {
+        "model": "panamapi.flight",
+        "pk": ,
+        "fields": {
+          "departureAirport": 3,
+          "departureDay": "2024-05-18",
+          "departureTime": "11:00:00",
+          "arrivalAirport": 4,
+          "arrivalDay": "2024-05-18",
+          "arrivalTime": "13:30:00",
+          "price": 275.00,
+          "points": 1400,
+          "seats": 180
+        }
+      },
+      {
+        "model": "panamapi.flight",
+        "pk": ,
+        "fields": {
+          "departureAirport": 4,
+          "departureDay": "2024-05-18",
+          "departureTime": "10:00:00",
+          "arrivalAirport": 5,
+          "arrivalDay": "2024-05-18",
+          "arrivalTime": "12:30:00",
+          "price": 200.00,
+          "points": 1000,
+          "seats": 150
+        }
+      },
+      {
+        "model": "panamapi.flight",
+        "pk": ,
+        "fields": {
+          "departureAirport": 4,
+          "departureDay": "2024-05-18",
+          "departureTime": "13:00:00",
+          "arrivalAirport": 6,
+          "arrivalDay": "2024-05-18",
+          "arrivalTime": "15:30:00",
+          "price": 225.00,
+          "points": 1100,
+          "seats": 160
+        }
+      },
+      {
+        "model": "panamapi.flight",
+        "pk": ,
+        "fields": {
+          "departureAirport": 5,
+          "departureDay": "2024-05-18",
+          "departureTime": "08:00:00",
+          "arrivalAirport": 1,
+          "arrivalDay": "2024-05-18",
+          "arrivalTime": "8:15:00",
+          "price": 200.00,
+          "points": 1000,
+          "seats": 140
+        }
+      },
+      {
+        "model": "panamapi.flight",
+        "pk": ,
+        "fields": {
+          "departureAirport": 5,
+          "departureDay": "2024-05-18",
+          "departureTime": "11:00:00",
+          "arrivalAirport": 2,
+          "arrivalDay": "2024-05-18",
+          "arrivalTime": "15:00:00",
+          "price": 250.00,
+          "points": 1200,
+          "seats": 170
+        }
+      },
+      {
+        "model": "panamapi.flight",
+        "pk": ,
+        "fields": {
+          "departureAirport": 6,
+          "departureDay": "2024-05-18",
+          "departureTime": "09:00:00",
+          "arrivalAirport": 3,
+          "arrivalDay": "2024-05-18",
+          "arrivalTime": "11:30:00",
+          "price": 175.00,
+          "points": 900,
+          "seats": 120
+        }
+      },
+      {
+        "model": "panamapi.flight",
+        "pk": ,
+        "fields": {
+          "departureAirport": 6,
+          "departureDay": "2024-05-18",
+          "departureTime": "12:00:00",
+          "arrivalAirport": 4,
+          "arrivalDay": "2024-05-18",
+          "arrivalTime": "14:30:00",
+          "price": 250.00,
+          "points": 1250,
+          "seats": 180
+        }
+      },
+      {
+        "model": "panamapi.flight",
+        "pk": ,
+        "fields": {
+          "departureAirport": 6,
+          "departureDay": "2024-05-18",
+          "departureTime": "15:00:00",
+          "arrivalAirport": 5,
+          "arrivalDay": "2024-05-18",
+          "arrivalTime": "16:30:00",
+          "price": 150.00,
+          "points": 700,
+          "seats": 100
+        }
+      },
+      {
+        "model": "panamapi.flight",
+        "pk": ,
+        "fields": {
+          "departureAirport": 1,
+          "departureDay": "2024-05-18",
+          "departureTime": "17:00:00",
+          "arrivalAirport": 2,
+          "arrivalDay": "2024-05-18",
+          "arrivalTime": "20:30:00",
+          "price": 280.00,
+          "points": 1400,
+          "seats": 200
+        }
+      },
+      {
+        "model": "panamapi.flight",
+        "pk": ,
+        "fields": {
+          "departureAirport": 1,
+          "departureDay": "2024-05-18",
+          "departureTime": "20:00:00",
+          "arrivalAirport": 3,
+          "arrivalDay": "2024-05-18",
+          "arrivalTime": "23:30:00",
+          "price": 225.00,
+          "points": 1100,
+          "seats": 160
+        }
+      },
+      {
+        "model": "panamapi.flight",
+        "pk": ,
+        "fields": {
+          "departureAirport": 2,
+          "departureDay": "2024-05-18",
+          "departureTime": "16:00:00",
+          "arrivalAirport": 4,
+          "arrivalDay": "2024-05-18",
+          "arrivalTime": "18:30:00",
+          "price": 325.00,
+          "points": 1600,
+          "seats": 220
+        }
+      },
+      {
+        "model": "panamapi.flight",
+        "pk": ,
+        "fields": {
+          "departureAirport": 2,
+          "departureDay": "2024-05-18",
+          "departureTime": "19:00:00",
+          "arrivalAirport": 5,
+          "arrivalDay": "2024-05-18",
+          "arrivalTime": "21:30:00",
+          "price": 275.00,
+          "points": 1350,
+          "seats": 180
+        }
+      },
+      {
+        "model": "panamapi.flight",
+        "pk": ,
+        "fields": {
+          "departureAirport": 3,
+          "departureDay": "2024-05-18",
+          "departureTime": "14:00:00",
+          "arrivalAirport": 1,
+          "arrivalDay": "2024-05-18",
+          "arrivalTime": "15:30:00",
+          "price": 175.00,
+          "points": 850,
+          "seats": 120
+        }
+      },
+      {
+        "model": "panamapi.flight",
+        "pk": ,
+        "fields": {
+          "departureAirport": 3,
+          "departureDay": "2024-05-18",
+          "departureTime": "17:00:00",
+          "arrivalAirport": 4,
+          "arrivalDay": "2024-05-18",
+          "arrivalTime": "19:30:00",
+          "price": 300.00,
+          "points": 1500,
+          "seats": 200
+        }
+      },
+      {
+        "model": "panamapi.flight",
+        "pk": ,
+        "fields": {
+          "departureAirport": 4,
+          "departureDay": "2024-05-18",
+          "departureTime": "16:00:00",
+          "arrivalAirport": 5,
+          "arrivalDay": "2024-05-18",
+          "arrivalTime": "18:30:00",
+          "price": 250.00,
+          "points": 1250,
+          "seats": 170
+        }
+      },
+      {
+        "model": "panamapi.flight",
+        "pk": ,
+        "fields": {
+          "departureAirport": 4,
+          "departureDay": "2024-05-18",
+          "departureTime": "19:00:00",
+          "arrivalAirport": 6,
+          "arrivalDay": "2024-05-18",
+          "arrivalTime": "21:30:00",
+          "price": 275.00,
+          "points": 1400,
+          "seats": 190
+        }
+      },
+      {
+        "model": "panamapi.flight",
+        "pk": ,
+        "fields": {
+          "departureAirport": 5,
+          "departureDay": "2024-05-18",
+          "departureTime": "14:00:00",
+          "arrivalAirport": 1,
+          "arrivalDay": "2024-05-18",
+          "arrivalTime": "14:15:00",
+          "price": 225.00,
+          "points": 1100,
+          "seats": 160
+        }
+      },
+      {
+        "model": "panamapi.flight",
+        "pk": ,
+        "fields": {
+          "departureAirport": 5,
+          "departureDay": "2024-05-18",
+          "departureTime": "17:00:00",
+          "arrivalAirport": 2,
+          "arrivalDay": "2024-05-18",
+          "arrivalTime": "21:00:00",
+          "price": 300.00,
+          "points": 1500,
+          "seats": 200
+        }
+      },
+      {
+        "model": "panamapi.flight",
+        "pk": ,
+        "fields": {
+          "departureAirport": 6,
+          "departureDay": "2024-05-18",
+          "departureTime": "18:00:00",
+          "arrivalAirport": 3,
+          "arrivalDay": "2024-05-18",
+          "arrivalTime": "20:30:00",
+          "price": 225.00,
+          "points": 1100,
+          "seats": 150
+        }
+      },
+      {
+        "model": "panamapi.flight",
+        "pk": ,
+        "fields": {
+          "departureAirport": 6,
+          "departureDay": "2024-05-18",
+          "departureTime": "21:00:00",
+          "arrivalAirport": 4,
+          "arrivalDay": "2024-05-18",
+          "arrivalTime": "23:30:00",
+          "price": 300.00,
+          "points": 1500,
+          "seats": 210
+        }
+      },
+      {
+        "model": "panamapi.flight",
+        "pk": ,
+        "fields": {
+          "departureAirport": 6,
+          "departureDay": "2024-05-18",
+          "departureTime": "00:00:00",
+          "arrivalAirport": 5,
+          "arrivalDay": "2024-05-18",
+          "arrivalTime": "01:30:00",
+          "price": 200.00,
+          "points": 1000,
+          "seats": 130
+        }
+      },
+      {
+        "model": "panamapi.flight",
+        "pk": ,
+        "fields": {
+          "departureAirport": 1,
+          "departureDay": "2024-05-18",
+          "departureTime": "06:00:00",
+          "arrivalAirport": 2,
+          "arrivalDay": "2024-05-18",
+          "arrivalTime": "09:30:00",
+          "price": 250.00,
+          "points": 1200,
+          "seats": 180
+        }
+      },
+      {
+        "model": "panamapi.flight",
+        "pk": ,
+        "fields": {
+          "departureAirport": 1,
+          "departureDay": "2024-05-18",
+          "departureTime": "09:00:00",
+          "arrivalAirport": 3,
+          "arrivalDay": "2024-05-18",
+          "arrivalTime": "12:30:00",
+          "price": 175.00,
+          "points": 900,
+          "seats": 120
+        }
+      },
+      {
+        "model": "panamapi.flight",
+        "pk": ,
+        "fields": {
+          "departureAirport": 1,
+          "departureDay": "2024-05-18",
+          "departureTime": "12:00:00",
+          "arrivalAirport": 4,
+          "arrivalDay": "2024-05-18",
+          "arrivalTime": "14:30:00",
+          "price": 300.00,
+          "points": 1500,
+          "seats": 200
+        }
+      },
+      {
+        "model": "panamapi.flight",
+        "pk": ,
+        "fields": {
+          "departureAirport": 1,
+          "departureDay": "2024-05-18",
+          "departureTime": "15:00:00",
+          "arrivalAirport": 5,
+          "arrivalDay": "2024-05-18",
+          "arrivalTime": "17:30:00",
+          "price": 225.00,
+          "points": 1100,
+          "seats": 150
+        }
+      },
+      {
+        "model": "panamapi.flight",
+        "pk": ,
+        "fields": {
+          "departureAirport": 1,
+          "departureDay": "2024-05-18",
+          "departureTime": "18:00:00",
+          "arrivalAirport": 6,
+          "arrivalDay": "2024-05-18",
+          "arrivalTime": "20:00:00",
+          "price": 175.00,
+          "points": 850,
+          "seats": 120
+        }
+      },
+      {
+        "model": "panamapi.flight",
+        "pk": ,
+        "fields": {
+          "departureAirport": 1,
+          "departureDay": "2024-05-18",
+          "departureTime": "21:00:00",
+          "arrivalAirport": 2,
+          "arrivalDay": "2024-05-18",
+          "arrivalTime": "00:30:00",
+          "price": 250.00,
+          "points": 1200,
+          "seats": 180
+        }
+      },
+      {
+        "model": "panamapi.flight",
+        "pk": ,
+        "fields": {
+          "departureAirport": 1,
+          "departureDay": "2024-05-18",
+          "departureTime": "00:00:00",
+          "arrivalAirport": 3,
+          "arrivalDay": "2024-05-18",
+          "arrivalTime": "03:30:00",
+          "price": 200.00,
+          "points": 1000,
+          "seats": 140
+        }
+      },
+      {
+        "model": "panamapi.flight",
+        "pk": ,
+        "fields": {
+          "departureAirport": 1,
+          "departureDay": "2024-05-18",
+          "departureTime": "03:00:00",
+          "arrivalAirport": 4,
+          "arrivalDay": "2024-05-18",
+          "arrivalTime": "05:30:00",
+          "price": 275.00,
+          "points": 1400,
+          "seats": 180
+        }
+      },
+      {
+        "model": "panamapi.flight",
+        "pk": ,
+        "fields": {
+          "departureAirport": 2,
+          "departureDay": "2024-05-18",
+          "departureTime": "07:00:00",
+          "arrivalAirport": 5,
+          "arrivalDay": "2024-05-18",
+          "arrivalTime": "09:30:00",
+          "price": 200.00,
+          "points": 1000,
+          "seats": 150
+        }
+      },
+      {
+        "model": "panamapi.flight",
+        "pk": ,
+        "fields": {
+          "departureAirport": 2,
+          "departureDay": "2024-05-18",
+          "departureTime": "10:00:00",
+          "arrivalAirport": 6,
+          "arrivalDay": "2024-05-18",
+          "arrivalTime": "12:30:00",
+          "price": 225.00,
+          "points": 1100,
+          "seats": 160
+        }
+      },
+      {
+        "model": "panamapi.flight",
+        "pk": ,
+        "fields": {
+          "departureAirport": 2,
+          "departureDay": "2024-05-18",
+          "departureTime": "13:00:00",
+          "arrivalAirport": 1,
+          "arrivalDay": "2024-05-18",
+          "arrivalTime": "16:30:00",
+          "price": 250.00,
+          "points": 1200,
+          "seats": 180
+        }
+      },
+      {
+        "model": "panamapi.flight",
+        "pk": ,
+        "fields": {
+          "departureAirport": 2,
+          "departureDay": "2024-05-18",
+          "departureTime": "16:00:00",
+          "arrivalAirport": 3,
+          "arrivalDay": "2024-05-18",
+          "arrivalTime": "19:30:00",
+          "price": 175.00,
+          "points": 900,
+          "seats": 120
+        }
+      },
+      {
+        "model": "panamapi.flight",
+        "pk": ,
+        "fields": {
+          "departureAirport": 2,
+          "departureDay": "2024-05-18",
+          "departureTime": "19:00:00",
+          "arrivalAirport": 4,
+          "arrivalDay": "2024-05-18",
+          "arrivalTime": "21:30:00",
+          "price": 300.00,
+          "points": 1500,
+          "seats": 200
+        }
+      },
+      {
+        "model": "panamapi.flight",
+        "pk": ,
+        "fields": {
+          "departureAirport": 2,
+          "departureDay": "2024-05-18",
+          "departureTime": "22:00:00",
+          "arrivalAirport": 5,
+          "arrivalDay": "2024-05-18",
+          "arrivalTime": "00:30:00",
+          "price": 225.00,
+          "points": 1100,
+          "seats": 150
+        }
+      },
+      {
+        "model": "panamapi.flight",
+        "pk": ,
+        "fields": {
+          "departureAirport": 2,
+          "departureDay": "2024-05-18",
+          "departureTime": "01:00:00",
+          "arrivalAirport": 6,
+          "arrivalDay": "2024-05-18",
+          "arrivalTime": "03:00:00",
+          "price": 175.00,
+          "points": 850,
+          "seats": 120
+        }
+      },
+      {
+        "model": "panamapi.flight",
+        "pk": ,
+        "fields": {
+          "departureAirport": 2,
+          "departureDay": "2024-05-18",
+          "departureTime": "04:00:00",
+          "arrivalAirport": 1,
+          "arrivalDay": "2024-05-18",
+          "arrivalTime": "07:30:00",
+          "price": 250.00,
+          "points": 1200,
+          "seats": 180
+        }
+      },
+      {
+        "model": "panamapi.flight",
+        "pk": ,
+        "fields": {
+          "departureAirport": 3,
+          "departureDay": "2024-05-18",
+          "departureTime": "06:00:00",
+          "arrivalAirport": 2,
+          "arrivalDay": "2024-05-18",
+          "arrivalTime": "09:30:00",
+          "price": 200.00,
+          "points": 1000,
+          "seats": 150
+        }
+      },
+      {
+        "model": "panamapi.flight",
+        "pk": ,
+        "fields": {
+          "departureAirport": 3,
+          "departureDay": "2024-05-18",
+          "departureTime": "09:00:00",
+          "arrivalAirport": 4,
+          "arrivalDay": "2024-05-18",
+          "arrivalTime": "11:30:00",
+          "price": 275.00,
+          "points": 1400,
+          "seats": 180
+        }
+      },
+      {
+        "model": "panamapi.flight",
+        "pk": ,
+        "fields": {
+          "departureAirport": 3,
+          "departureDay": "2024-05-18",
+          "departureTime": "12:00:00",
+          "arrivalAirport": 5,
+          "arrivalDay": "2024-05-18",
+          "arrivalTime": "14:30:00",
+          "price": 225.00,
+          "points": 1100,
+          "seats": 160
+        }
+      },
+      {
+        "model": "panamapi.flight",
+        "pk": ,
+        "fields": {
+          "departureAirport": 3,
+          "departureDay": "2024-05-18",
+          "departureTime": "15:00:00",
+          "arrivalAirport": 6,
+          "arrivalDay": "2024-05-18",
+          "arrivalTime": "17:30:00",
+          "price": 250.00,
+          "points": 1200,
+          "seats": 180
+        }
+      },
+      {
+        "model": "panamapi.flight",
+        "pk": ,
+        "fields": {
+          "departureAirport": 3,
+          "departureDay": "2024-05-18",
+          "departureTime": "18:00:00",
+          "arrivalAirport": 1,
+          "arrivalDay": "2024-05-18",
+          "arrivalTime": "19:30:00",
+          "price": 175.00,
+          "points": 900,
+          "seats": 120
+        }
+      },
+      {
+        "model": "panamapi.flight",
+        "pk": ,
+        "fields": {
+          "departureAirport": 3,
+          "departureDay": "2024-05-18",
+          "departureTime": "21:00:00",
+          "arrivalAirport": 2,
+          "arrivalDay": "2024-05-18",
+          "arrivalTime": "00:30:00",
+          "price": 200.00,
+          "points": 1000,
+          "seats": 140
+        }
+      },
+      {
+        "model": "panamapi.flight",
+        "pk": ,
+        "fields": {
+          "departureAirport": 3,
+          "departureDay": "2024-05-18",
+          "departureTime": "00:00:00",
+          "arrivalAirport": 4,
+          "arrivalDay": "2024-05-18",
+          "arrivalTime": "02:30:00",
+          "price": 275.00,
+          "points": 1400,
+          "seats": 180
+        }
+      },
+      {
+        "model": "panamapi.flight",
+        "pk": ,
+        "fields": {
+          "departureAirport": 4,
+          "departureDay": "2024-05-18",
+          "departureTime": "07:00:00",
+          "arrivalAirport": 5,
+          "arrivalDay": "2024-05-18",
+          "arrivalTime": "09:30:00",
+          "price": 225.00,
+          "points": 1100,
+          "seats": 160
+        }
+      },
+      {
+        "model": "panamapi.flight",
+        "pk": ,
+        "fields": {
+          "departureAirport": 4,
+          "departureDay": "2024-05-18",
+          "departureTime": "10:00:00",
+          "arrivalAirport": 6,
+          "arrivalDay": "2024-05-18",
+          "arrivalTime": "12:30:00",
+          "price": 250.00,
+          "points": 1200,
+          "seats": 180
+        }
+      },
+      {
+        "model": "panamapi.flight",
+        "pk": ,
+        "fields": {
+          "departureAirport": 4,
+          "departureDay": "2024-05-18",
+          "departureTime": "13:00:00",
+          "arrivalAirport": 1,
+          "arrivalDay": "2024-05-18",
+          "arrivalTime": "15:30:00",
+          "price": 275.00,
+          "points": 1400,
+          "seats": 180
+        }
+      },
+      {
+        "model": "panamapi.flight",
+        "pk": ,
+        "fields": {
+          "departureAirport": 4,
+          "departureDay": "2024-05-18",
+          "departureTime": "16:00:00",
+          "arrivalAirport": 2,
+          "arrivalDay": "2024-05-18",
+          "arrivalTime": "18:30:00",
+          "price": 200.00,
+          "points": 1000,
+          "seats": 150
+        }
+      },
+      {
+        "model": "panamapi.flight",
+        "pk": ,
+        "fields": {
+          "departureAirport": 4,
+          "departureDay": "2024-05-18",
+          "departureTime": "19:00:00",
+          "arrivalAirport": 3,
+          "arrivalDay": "2024-05-18",
+          "arrivalTime": "21:30:00",
+          "price": 225.00,
+          "points": 1100,
+          "seats": 160
+        }
+      },
+      {
+        "model": "panamapi.flight",
+        "pk": ,
+        "fields": {
+          "departureAirport": 4,
+          "departureDay": "2024-05-18",
+          "departureTime": "22:00:00",
+          "arrivalAirport": 5,
+          "arrivalDay": "2024-05-18",
+          "arrivalTime": "00:30:00",
+          "price": 250.00,
+          "points": 1200,
+          "seats": 180
+        }
+      },
+      {
+        "model": "panamapi.flight",
+        "pk": ,
+        "fields": {
+          "departureAirport": 4,
+          "departureDay": "2024-05-18",
+          "departureTime": "01:00:00",
+          "arrivalAirport": 6,
+          "arrivalDay": "2024-05-18",
+          "arrivalTime": "03:30:00",
+          "price": 175.00,
+          "points": 900,
+          "seats": 120
+        }
+      },
+      {
+        "model": "panamapi.flight",
+        "pk": ,
+        "fields": {
+          "departureAirport": 4,
+          "departureDay": "2024-05-18",
+          "departureTime": "04:00:00",
+          "arrivalAirport": 1,
+          "arrivalDay": "2024-05-18",
+          "arrivalTime": "06:30:00",
+          "price": 200.00,
+          "points": 1000,
+          "seats": 140
+        }
+      },
+      {
+        "model": "panamapi.flight",
+        "pk": ,
+        "fields": {
+          "departureAirport": 5,
+          "departureDay": "2024-05-18",
+          "departureTime": "06:00:00",
+          "arrivalAirport": 2,
+          "arrivalDay": "2024-05-18",
+          "arrivalTime": "10:00:00",
+          "price": 275.00,
+          "points": 1400,
+          "seats": 180
+        }
+      },
+      {
+        "model": "panamapi.flight",
+        "pk": ,
+        "fields": {
+          "departureAirport": 5,
+          "departureDay": "2024-05-18",
+          "departureTime": "09:00:00",
+          "arrivalAirport": 3,
+          "arrivalDay": "2024-05-18",
+          "arrivalTime": "12:30:00",
+          "price": 225.00,
+          "points": 1100,
+          "seats": 160
+        }
+      },
+      {
+        "model": "panamapi.flight",
+        "pk": ,
+        "fields": {
+          "departureAirport": 5,
+          "departureDay": "2024-05-18",
+          "departureTime": "12:00:00",
+          "arrivalAirport": 4,
+          "arrivalDay": "2024-05-18",
+          "arrivalTime": "14:30:00",
+          "price": 250.00,
+          "points": 1200,
+          "seats": 180
+        }
+      },
+      {
+        "model": "panamapi.flight",
+        "pk": ,
+        "fields": {
+          "departureAirport": 5,
+          "departureDay": "2024-05-18",
+          "departureTime": "15:00:00",
+          "arrivalAirport": 6,
+          "arrivalDay": "2024-05-18",
+          "arrivalTime": "17:00:00",
+          "price": 175.00,
+          "points": 900,
+          "seats": 120
+        }
+      },
+      {
+        "model": "panamapi.flight",
+        "pk": ,
+        "fields": {
+          "departureAirport": 5,
+          "departureDay": "2024-05-18",
+          "departureTime": "18:00:00",
+          "arrivalAirport": 1,
+          "arrivalDay": "2024-05-18",
+          "arrivalTime": "20:30:00",
+          "price": 200.00,
+          "points": 1000,
+          "seats": 140
+        }
+      },
+      {
+        "model": "panamapi.flight",
+        "pk": ,
+        "fields": {
+          "departureAirport": 5,
+          "departureDay": "2024-05-18",
+          "departureTime": "21:00:00",
+          "arrivalAirport": 2,
+          "arrivalDay": "2024-05-18",
+          "arrivalTime": "01:00:00",
+          "price": 275.00,
+          "points": 1400,
+          "seats": 180
+        }
+      },
+      {
+        "model": "panamapi.flight",
+        "pk": ,
+        "fields": {
+          "departureAirport": 6,
+          "departureDay": "2024-05-18",
+          "departureTime": "07:00:00",
+          "arrivalAirport": 3,
+          "arrivalDay": "2024-05-18",
+          "arrivalTime": "09:30:00",
+          "price": 225.00,
+          "points": 1100,
+          "seats": 160
+        }
+      },
+      {
+        "model": "panamapi.flight",
+        "pk": ,
+        "fields": {
+          "departureAirport": 6,
+          "departureDay": "2024-05-18",
+          "departureTime": "10:00:00",
+          "arrivalAirport": 4,
+          "arrivalDay": "2024-05-18",
+          "arrivalTime": "12:30:00",
+          "price": 250.00,
+          "points": 1200,
+          "seats": 180
+        }
+      },
+      {
+        "model": "panamapi.flight",
+        "pk": ,
+        "fields": {
+          "departureAirport": 6,
+          "departureDay": "2024-05-18",
+          "departureTime": "13:00:00",
+          "arrivalAirport": 5,
+          "arrivalDay": "2024-05-18",
+          "arrivalTime": "15:00:00",
+          "price": 175.00,
+          "points": 900,
+          "seats": 120
+        }
+      },
+      {
+        "model": "panamapi.flight",
+        "pk": ,
+        "fields": {
+          "departureAirport": 6,
+          "departureDay": "2024-05-18",
+          "departureTime": "16:00:00",
+          "arrivalAirport": 1,
+          "arrivalDay": "2024-05-18",
+          "arrivalTime": "18:30:00",
+          "price": 200.00,
+          "points": 1000,
+          "seats": 140
+        }
+      },
+      {
+        "model": "panamapi.flight",
+        "pk": ,
+        "fields": {
+          "departureAirport": 6,
+          "departureDay": "2024-05-18",
+          "departureTime": "19:00:00",
+          "arrivalAirport": 2,
+          "arrivalDay": "2024-05-18",
+          "arrivalTime": "22:30:00",
+          "price": 275.00,
+          "points": 1400,
+          "seats": 180
+        }
+      }
