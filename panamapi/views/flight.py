@@ -62,6 +62,7 @@ class Flights(ViewSet):
                     departureAirport=airport,
                     arrivalAirport=arrival_airport,
                     departureDay__gte=min_departure_datetime.date(),
+                    departureDay__lte=max_departure_datetime.date(),
                     departureTime__gte=min_departure_datetime.time(),
                     departureTime__lte=max_departure_datetime.time()
                 )
