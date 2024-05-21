@@ -1,4 +1,5 @@
 import json
+from django.db import IntegrityError
 from django.http import HttpResponse, HttpResponseNotAllowed
 from django.contrib.auth import authenticate
 from django.contrib.auth.models import User
@@ -55,28 +56,33 @@ def register_user(request):
     # Load the JSON string of the request body into a dict
     req_body = json.loads(request.body.decode())
 
-    # Create a new user by invoking the `create_user` helper method
-    # on Django's built-in User model
-    new_user = User.objects.create_user(
-        username=req_body['username'],
-        email=req_body['email'],
-        password=req_body['password'],
-        first_name=req_body['first_name'],
-        last_name=req_body['last_name']
-    )
+    try:
+        # Create a new user by invoking the `create_user` helper method
+        # on Django's built-in User model
+        new_user = User.objects.create_user(
+            username=req_body['username'],
+            email=req_body['email'],
+            password=req_body['password'],
+            first_name=req_body['first_name'],
+            last_name=req_body['last_name']
+        )
 
-    customer = Customer.objects.create(
-        phone_number=req_body['phone_number'],
-        date_of_birth=req_body['date_of_birth'],
-        user=new_user
-    )
+        customer = Customer.objects.create(
+            phone_number=req_body['phone_number'],
+            date_of_birth=req_body['date_of_birth'],
+            user=new_user
+        )
 
-    # Commit the user to the database by saving it
-    customer.save()
+        # Commit the user to the database by saving it
+        customer.save()
 
-    # Use the REST Framework's token generator on the new user account
-    token = Token.objects.create(user=new_user)
+        # Use the REST Framework's token generator on the new user account
+        token = Token.objects.create(user=new_user)
 
-    # Return the token to the client
-    data = json.dumps({"token": token.key, "id": new_user.id})
-    return HttpResponse(data, content_type='application/json', status=status.HTTP_201_CREATED)
+        # Return the token to the client
+        data = json.dumps({"token": token.key, "id": new_user.id})
+        return HttpResponse(data, content_type='application/json', status=status.HTTP_201_CREATED)
+
+    except IntegrityError:
+        error = json.dumps("username already exists")
+        return HttpResponse(error, content_type='application/json', status=status.HTTP_400_BAD_REQUEST)
