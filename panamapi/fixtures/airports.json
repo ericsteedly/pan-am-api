@@ -1,0 +1,74 @@
+[
+    {
+      "model": "panamapi.airport",
+      "pk": 1,
+      "fields": {
+        "name": "Los Angeles International Airport",
+        "city": "Los Angeles",
+        "state":"California",
+        "country":"USA",
+        "airport_code": "LAX",
+        "timezone": "America/Los_Angeles"
+      }
+    },
+    {
+      "model": "panamapi.airport",
+      "pk": 2,
+      "fields": {
+        "name": "John F. Kennedy International Airport",
+        "city": "New York City",
+        "state":"New York",
+        "country": "USA",
+        "airport_code": "JFK",
+        "timezone": "America/New_York"
+      }
+    },
+    {
+      "model": "panamapi.airport",
+      "pk": 3,
+      "fields": {
+        "name": "Nashville International Airport",
+        "city": "Nashville",
+        "state": "Tennessee",
+        "country":"USA",
+        "airport_code": "BNA",
+        "timezone": "America/Chicago"
+      }
+    },
+    {
+      "model": "panamapi.airport",
+      "pk": 4,
+      "fields": {
+        "name": "Los Cabos International Airport",
+        "city": "San Jose del Cabo",
+        "state": "Baja California Sur",
+        "country": "Mexico",
+        "airport_code": "SJD",
+        "timezone": "America/Los_Angeles"
+      }
+    },
+    {
+      "model": "panamapi.airport",
+      "pk": 5,
+      "fields": {
+        "name": "Phoenix Sky Harbor International Airport ",
+        "city": "Phoenix",
+        "state": "Arizona",
+        "country": "USA",
+        "airport_code": "PHX",
+        "timezone": "America/Denver"
+      }
+    },
+    {
+      "model": "panamapi.airport",
+      "pk": 6,
+      "fields": {
+        "name": "Denver International Airport",
+        "city": "Denver",
+        "state": "Colorado",
+        "country": "USA",
+        "airport_code": "DEN",
+        "timezone": "America/Denver"
+      }
+    }
+  ]

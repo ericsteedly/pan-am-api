@@ -1,0 +1,38 @@
+[
+    {
+        "model": "panamapi.customer",
+        "pk": 1,
+        "fields": {
+            "user": 1,
+            "phone_number": "615-502-1212",
+            "date_of_birth": "1992-04-22"
+        }
+    },
+    {
+        "model": "panamapi.customer",
+        "pk": 2,
+        "fields": {
+            "user": 2,
+            "phone_number": "555-615-9876",
+            "date_of_birth": "1995-02-12"
+        }
+    },
+    {
+        "model": "panamapi.customer",
+        "pk": 3,
+        "fields": {
+            "user": 3,
+            "phone_number": "999-234-8765",
+            "date_of_birth": "2000-05-24"
+        }
+    },
+    {
+        "model": "panamapi.customer",
+        "pk": 4,
+        "fields": {
+            "user": 4,
+            "phone_number": "418-765-4567",
+            "date_of_birth": "1990-12-30"
+        }
+    }
+]
