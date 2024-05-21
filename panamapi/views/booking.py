@@ -33,6 +33,8 @@ class BookingSerializer(serializers.ModelSerializer):
         ]
 
 class RoundTripSerializer(serializers.ModelSerializer):
+    departure_booking = BookingSerializer(many=False)
+    return_booking = BookingSerializer(many=False)
 
     class Meta:
         model = RoundTrip
