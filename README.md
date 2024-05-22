@@ -12,8 +12,11 @@ Pan-Am airlines unfortunately ceased service in the early 90's, yet it will alwa
 * Store and add new payment types to user account
 * Manage user account
 
-### Useage Note: 
+### Useage Notes: 
 To simulate the logic that a server might use to create routing for real airline bookings, this application pulls available flights from a finite list stored in its own Pan-Am database, which has been populated with flights through **July 2024**. If you attempt to search for flights beyond then, there will be none available.
+
+!!! FAN-AM 
+ When you run/navigate to this application, it will appear as "FAN-AM" rather than "PAN-AM" to avoid any potential issues with trademark/copyright
 
 ## Built With
 ![Next.js](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
