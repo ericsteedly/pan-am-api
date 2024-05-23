@@ -78,12 +78,16 @@ CORS_ORIGIN_WHITELIST = (
       "pan-am-eight.vercel.app"
       )
 
-CSRF_TRUSTED_ORIGINS =['http://localhost:3000']
+CSRF_TRUSTED_ORIGINS =[
+    "http://localhost:3000", 
+    "pan-am-eight.vercel.app"
+    ]
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
-    # Add any other origins you want to allow
-]
+    "pan-am-eight.vercel.app"
+    ]
+
 CORS_ALLOW_CREDENTIALS = True
 
 ROOT_URLCONF = 'panam.urls'
