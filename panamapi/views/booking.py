@@ -163,7 +163,7 @@ class Bookings(ViewSet):
             except Booking.DoesNotExist as ex:
                 return Response({"booking(s) not found": ex.args[0]}, status=status.HTTP_404_NOT_FOUND)
 
-            return Response("Roundtrip bookings deleted", status=status.HTTP_204_NO_CONTENT)
+            return Response(status=status.HTTP_204_NO_CONTENT)
 
 
         
