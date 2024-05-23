@@ -56,7 +56,7 @@ class Flights(ViewSet):
             for flight1 in first_leg:
                 arrival_datetime = datetime.combine(flight1.arrivalDay, flight1.arrivalTime)
                 min_departure_datetime = arrival_datetime + timedelta(minutes=30) #create parameter for minimum layover of 30 minutes
-                max_departure_datetime = arrival_datetime + timedelta(hours=3) #create parameter for max layover of 3 hours
+                max_departure_datetime = arrival_datetime + timedelta(hours=2) #create parameter for max layover of 3 hours
 
                 second_leg = Flight.objects.filter(
                     departureAirport=airport,
