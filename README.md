@@ -1,8 +1,11 @@
-# Welcome to the Pan-Am airlines flight-booking application
-I created this web application, along with its Pan-Am API, as my full-stack capstone project to complete my certification in the Nashville Software School full-stack web development bootcamp. Note that this project is actively being updated with new feature additions.
+![Screenshot 2024-05-23 at 4 09 45 PM](https://github.com/ericsteedly/pan-am/assets/143138529/46f10c9b-ea3d-465b-8f96-3f9c26d8b9a9)
+
+# Welcome to the Pan-Am Airways flight-booking application (now called Fan-Am). Click [HERE](https://pan-am-eight.vercel.app/) to try it out!
+
+I created this web application, along with its Pan-Am front-end application, as my full-stack capstone project to complete my certification in the [Nashville Software School](https://nashvillesoftwareschool.com/) full-stack web development bootcamp. Note that this project is actively being updated with new feature additions.
 
 ## About Pan-Am app
-Pan-Am airlines unfortunately ceased service in the early 90's, yet it will always be iconic. This project serves as a mock flight-booking application for the airline had it continued to exist into the age of the World Wide Web. 
+Pan-Am airways unfortunately ceased service in the early 90's, yet it will always be iconic. This project serves as a mock flight-booking application for the airline had it continued to exist into the age of the World Wide Web. 
 
 ## Features
 * User account data/authentication
