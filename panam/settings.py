@@ -30,7 +30,7 @@ SECRET_KEY = os.getenv("DJANGO_SECRET_KEY", get_random_secret_key())
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv("DEBUG", "False")
 
-ALLOWED_HOSTS = os.getenv("DJANGO_ALLOWED_HOSTS", '').split(",")
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost' , 'hammerhead-app-qgvud.ondigitalocean.app']
 
 DEVELOPMENT_MODE = os.getenv("DEVELOPMENT_MODE", "False")
 
