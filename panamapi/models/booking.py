@@ -14,4 +14,4 @@ class Booking(models.Model):
         total = 0
         for ticket in self.tickets.all():
             total += ticket.flight.price
-        return "{:.2f}".format(total)
+        return total
