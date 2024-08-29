@@ -1,5 +1,7 @@
 ![Screenshot 2024-05-23 at 4 09 45 PM](https://github.com/ericsteedly/pan-am/assets/143138529/46f10c9b-ea3d-465b-8f96-3f9c26d8b9a9)
 
+# !!!Fan-Am Airways data is currently under maintenance and will not show available flights at this time
+
 # Welcome to the Fan-Am Airways flight-booking application (formerly called Pan-Am). Click [HERE](https://pan-am-eight.vercel.app/) to try it out!
 
 I created this web application, along with its Fan-Am front-end application, as my full-stack capstone project to complete my certification in the [Nashville Software School](https://nashvillesoftwareschool.com/) full-stack web development bootcamp. Note that this project is actively being updated with new feature additions.
