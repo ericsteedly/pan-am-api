@@ -1,11 +1,11 @@
 ![Screenshot 2024-05-23 at 4 09 45 PM](https://github.com/ericsteedly/pan-am/assets/143138529/46f10c9b-ea3d-465b-8f96-3f9c26d8b9a9)
 
-# Welcome to the Pan-Am Airways flight-booking application (now called Fan-Am). Click [HERE](https://pan-am-eight.vercel.app/) to try it out!
+# Welcome to the Fan-Am Airways flight-booking application (formerly called Pan-Am). Click [HERE](https://pan-am-eight.vercel.app/) to try it out!
 
-I created this web application, along with its Pan-Am front-end application, as my full-stack capstone project to complete my certification in the [Nashville Software School](https://nashvillesoftwareschool.com/) full-stack web development bootcamp. Note that this project is actively being updated with new feature additions.
+I created this web application, along with its Fan-Am front-end application, as my full-stack capstone project to complete my certification in the [Nashville Software School](https://nashvillesoftwareschool.com/) full-stack web development bootcamp. Note that this project is actively being updated with new feature additions.
 
-## About Pan-Am app
-Pan-Am airways unfortunately ceased service in the early 90's, yet it will always be iconic. This project serves as a mock flight-booking application for the airline had it continued to exist into the age of the World Wide Web. 
+## About Fan-Am app
+Fan-Am(i.e. Pan-Am) airways unfortunately ceased service in the early 90's, yet it will always be iconic. This project serves as a mock flight-booking application for the airline had it continued to exist into the age of the World Wide Web. 
 
 ## Features
 * User account data/authentication
@@ -16,7 +16,7 @@ Pan-Am airways unfortunately ceased service in the early 90's, yet it will alway
 * Manage user account
 
 ### Useage Notes: 
-To simulate the logic that a server might use to create routing for real airline bookings, this application pulls available flights from a finite list stored in its own Pan-Am database, which has been populated with flights through **July 2024**. If you attempt to search for flights beyond then, there will be none available.
+To simulate the logic that a server might use to create routing for real airline bookings, this application pulls available flights from a finite list stored in its own Fan-Am database, which has been populated with flights through **December 2024**. If you attempt to search for flights beyond this date, there will be none available.
 
 !!! FAN-AM 
  When you run/navigate to this application, it will appear as "FAN-AM" rather than "PAN-AM" to avoid any potential issues with trademark/copyright

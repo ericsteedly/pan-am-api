@@ -2,15 +2,18 @@ import json
 # This code is used to renumber the pk's in the x.json template of flights
 
 # x.json file is currently a template for 1 month of flights
-# first use command + F, Option + Return to select and chang the month as needed
+# first use command + F, Option + Return to select and change the month as needed
+
+# Insert pk into the first object in x.json file after which you would like to start incrementing, 
+# it will be grabbed as "x" for starter reference
+
 file_path = "/Users/ericsteedly/workspace/pan-am-api/panamapi/fixtures/x.json"
 
 # Load the JSON data from the file
 with open(file_path, "r") as file:
     data = json.load(file)
 
-# Insert pk into the first object in json file after which you would like to start incrementing, 
-# it will be grabbed as "x" for starter reference
+
 
 # Iterate over the JSON data
 
