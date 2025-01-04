@@ -3,6 +3,7 @@ import json
 
 # x.json file is currently a template for 1 month of flights
 # first use command + F, Option + Return to select and change the month as needed
+# !!!!!!Rememeber to account for months with fewer days and adjust accordingly
 
 # Insert pk into the first object in x.json file after which you would like to start incrementing, 
 # it will be grabbed as "x" for starter reference
